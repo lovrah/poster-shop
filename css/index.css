@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: black;
+    font-family: "Fira Sans";
+    color: white;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    align-content: space-between;
+    border-bottom: 1px solid black;
+    height: 600px;
+    margin-bottom: 200px;
+}
+
+.menu { 
+padding: 1rem;
+    position: fixed;
+}   
+
+
+.header-pic {
+    margin-top: 0;
+    justify-self: center;
+    width: 100%;
+}
+
+#poster img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: "Fira Sans";
+    font-size: 2rem;
+    color: white;
+    margin: 10px 0px;
+}
+
+h3 {
+    font-family: "Fira Sans";
+    font-size: 2rem;
+}
+
+.navpic img {
+    width: 100%;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 6rem;
+  margin-top: 6rem;
+  width: 1140px;
+  height: fit-content;
+
+}
+
+.grid-container p {
+    margin: 10px 0 20px 0;
+}
+
+.grid-container2 {
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 6rem;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+    width: 1140px;
+    height: fit-content;
+}
+
+article.card img {
+    width: 350px;
+}
+
+article.card p {
+    width: 320px;
+}
+
+.article.card-double {
+    display: flex;
+}
+
+.card-double {
+    background-color: white;
+    display: grid;
+    column-gap: 2rem;
+}
+
+.card-double img {
+    width: 554px;
+}
+
+.card-double h3 {
+    margin: 30px;
+}
+
+.card-double p {
+    margin: 30px;
+}
+
+
+.m-btn {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: rgba(232, 63, 87, 1);
+    width: 200px;
+    height: 40px;
+}
+
+.m-btn h3 {
+        font-size: 1rem;
+        color: white;
+        margin: .25rem;
+}
+
+.m-btn2 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 2rem 0 1rem 2rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: rgba(232, 63, 87, 1);
+    width: 220px;
+    height: 50px;
+}
+
+.m-btn2 h3 {
+    font-size: 1rem;
+    color: white;
+    margin: .5rem;
+}
+
+
+footer {
+    height: 320px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: space-between;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    background-color: #FFFFFF33;
+
+
+}
+
+footer article {
+    display: grid;
+    justify-content: center;
+    align-items: normal;
+    align-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+footer h4 {
+    font-size: 2rem;
+}
+
+footer p {
+    margin: 0.25rem 0; 
+}
+
+
+.social-footer a {
+    display: grid;
+    align-items: flex-start;
+    flex-direction: column;
+    align-content: center;
+ 
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        max-width: 420px;
+    }
+
+header {
+    max-width: 480px;
+    margin-bottom: 1rem;
+    max-height: 200px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    row-gap: 6rem;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    width: 1140px;
+    height: fit-content;
+  
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    row-gap: 6rem;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    width: 1140px;
+    height: fit-content;
+  
+  }
+
+  .card-double {
+    max-width: 350px;
+  }
+
+  .card-double img {
+    width: 350px;
+}
+
+footer {
+    height: 250px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(1, 1fr);
+    align-content: start;
+    justify-content: start;
+    color: white;
+    background-color: #FFFFFF33;
+    max-width: 420px;
+}
+
+footer article {
+    max-width: 100px;
+}
+
+    footer h4 {
+        font-size: 1rem;
+    }
+    
+
+
+  
+}
